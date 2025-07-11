@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #090909f3;
+  }
+  /* CSS */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+  }
+  
+  .logo img {
+    height: 60px;
+  }
+  
+  .topnav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .topnav li {
+    margin-left: 20px;
+  }
+  
+  .topnav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+  }
+  
+  /* Add a black background color to the top navigation */
+.topnav {
+    background:transparent;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  ul li {
+    position: relative;
+    margin: 0 20px;
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  a {
+    
+  }
+  #logo {
+    width: 120px;      /* Adjust as needed */
+    height: auto;
+    display: block;
+    mix-blend-mode: luminosity;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #090909f3;
+    padding: 10px;
+    color:#bdbdbd
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  #confirmationMessage {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.85);
+    color: rgb(195, 195, 194);
+    padding: 30px 50px;
+    font-size: 2rem;
+    font-weight: 800;
+    border: 2px solid rgb(178, 178, 178);
+    border-radius: 15px;
+    z-index: 1000;
+    text-align: center;
+    box-shadow: 0 0 20px rgb(217, 217, 214);
+  }
+  
